@@ -32,6 +32,7 @@ function countTips(day) {
 	return `for this one of beautifull week days one barman had ${oneBarmen} of cash, one hostes ${oneHostes} of cash, and, finally, one officiant had ${oneOfficiant} of cash`;
 }
 
+console.log('aaa')
 
 
 
