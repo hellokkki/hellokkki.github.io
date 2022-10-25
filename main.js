@@ -15,11 +15,7 @@ function messageWriter (e) {
     }
    
    const day = Object.fromEntries(arr);
-   console.log(day);
    const tips = countTips(day);
-   for (let prop in day) {
-    console.log(typeof prop);
-   }
    console.log(tips);
    return tips;
 }
@@ -28,11 +24,13 @@ function messageWriter (e) {
 
 function countTips(day) {
 
-    oneBarmen = (day.sum / 10) / day.barmen;
-	oneHostes = oneBarmen * 0.8;
-	oneOfficiant =  +day.sum - (( oneBarmen * +day.bar + oneHostes * +day.hostes ) / +day.officiants);
+    const oneBarmen = (day.sum / 10) / day.barmen;
+	const oneHostes = (day.sum / 12.5) / day.hostes;
+	const oneOfficiant = (day.sum - 
+        ((day.sum / 10) * day.barmen + (day.sum / 12.5) * day.hostes)) / day.officiants;
 
-	return [oneBarmen, oneHostes, oneOfficiant];
+	return `for this one of beautifull week days one barman had 
+    ${oneBarmen} of cash, one hostes ${oneHostes} of cash, and, finally, one officiant had ${oneOfficiant} of cash`;
 }
 
 
