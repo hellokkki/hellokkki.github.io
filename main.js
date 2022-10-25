@@ -33,6 +33,7 @@ function countTips(day) {
     ${oneBarmen} of cash, one hostes ${oneHostes} of cash, and, finally, one officiant had ${oneOfficiant} of cash`;
 }
 
+console.log('how to github it aaaaa')
 
 
 
