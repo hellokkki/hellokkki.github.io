@@ -3,11 +3,12 @@ const arr = [];
 
 const button = document.querySelector('#get-btn');
 const form = document.querySelector('[name="form"]');
+const moneyholder = document.querySelector('.moneyholder');
 
-form.addEventListener("submit", messageWriter);
+form.addEventListener("submit", countInputTips);
 
 
-function messageWriter (e) {
+function countInputTips (e) {
     e.preventDefault();
     const data = new FormData(form);
     for (const [name, value] of data) {
@@ -16,10 +17,10 @@ function messageWriter (e) {
    
    const day = Object.fromEntries(arr);
    const tips = countTips(day);
+   moneyholder.innerHTML = `<p>${tips}</p>`
    console.log(tips);
    return tips;
 }
-
 
 
 function countTips(day) {
@@ -32,7 +33,6 @@ function countTips(day) {
 	return `for this one of beautifull week days one barman had ${oneBarmen} of cash, one hostes ${oneHostes} of cash, and, finally, one officiant had ${oneOfficiant} of cash`;
 }
 
-console.log('aaa')
 
 
 
