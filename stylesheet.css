@@ -76,4 +76,8 @@ input.input {
 .moneyholder {
     padding: 3rem 3rem;
     border: 1px solid black;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
 }

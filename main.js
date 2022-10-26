@@ -17,9 +17,16 @@ function countInputTips (e) {
    
    const day = Object.fromEntries(arr);
    const tips = countTips(day);
-   moneyholder.innerHTML = `<p>${tips}</p>`
-   console.log(tips);
-   return tips;
+  
+   const newDiv = document.createElement('div');
+   const moneyLine = document.createTextNode(`${tips}`);
+
+   newDiv.style.width = '15rem';
+   newDiv.style.height = '2rem';
+   newDiv.style.paddingTop = '6rem';
+
+   newDiv.appendChild(moneyLine);
+   moneyholder.append(newDiv);
 }
 
 
