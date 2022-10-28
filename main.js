@@ -21,9 +21,10 @@ function countInputTips (e) {
    const newDiv = document.createElement('div');
    const moneyLine = document.createTextNode(`${tips}`);
 
+
    newDiv.style.width = '15rem';
-   newDiv.style.height = '2rem';
-   newDiv.style.paddingTop = '6rem';
+   newDiv.style.height = '4rem';
+   newDiv.style.paddingTop = '-4rem';
 
    newDiv.appendChild(moneyLine);
    moneyholder.append(newDiv);

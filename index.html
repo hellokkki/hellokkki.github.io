@@ -12,29 +12,34 @@
 <body>
     
     <section class="section">
-        <div class="some-class">
+       <div class="wrapper"> <div class="calculate-form-block">
             <form action="" method="POST" name="form" id="form" class="form">
+                <h2>This is place there you can calculate tips</h2>
+                <p>for now the system gives 10% to barmen, 8% to hostes and the rest to the waiters. Also for now it is only equal parts for all personal of one subdivision</p>
                 <div class="form-block">
                     <label for="hostes">how many hostes dude</label>
-                <input type="number" name="hostes" id="hostes" class="input" />
+                <input type="text" name="hostes" id="hostes" class="input" />
                 </div>
                 <div class="form-block">
                     <label for="barmen">how many barmens dude</label>
-                    <input type="number" name="barmen" id="barmen" class="input" />
+                    <input type="text" name="barmen" id="barmen" class="input" />
                 </div>
                 <div class="form-block">
                     <label for="officants">how many officiants dude</label>
-                    <input type="number" name="officiants" id="officiants" class="input" />
+                    <input type="text" name="officiants" id="officiants" class="input" />
                 </div>
                 <div class="form-block">
                     <label for="sum">how many cash dude</label>
-                    <input type="number" name="sum" id="sum" class="input">
+                    <input type="text" name="sum" id="sum" class="input">
                 </div>
-                <button type="submit" id="get-btn" class="btn"> </button>
+                <div class="button-block">
+                <button type="submit" id="get-btn" class="btn btn-calculate">press</button>
+                </div>
             </form>
 
         </div>
         <div class="moneyholder"></div>
+       </div>
     </section>
 
     <script src="main.js"></script>
