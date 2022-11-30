@@ -38,7 +38,7 @@ function countTips(day) {
 	const oneOfficiant = (day.sum - 
         ((day.sum / 10) * day.barmen + (day.sum / 12.5) * day.hostes)) / day.officiants;
 
-	return `for this one of beautifull week days one barman had ${oneBarmen} of cash, one hostes ${oneHostes} of cash, and, finally, one officiant had ${oneOfficiant} of cash`;
+	return `for this one of beautifull week days one barman had ${Math.round(oneBarmen)} of cash, one hostes ${Math.round(oneHostes)} of cash, and, finally, one officiant had ${Math.round(oneOfficiant)} of cash`;
 }
 
 
